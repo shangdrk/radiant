@@ -1,0 +1,27 @@
+.network {
+    float: left;
+    width: 68%;
+}
+
+.control_panel {
+    float: right;
+    background-color: aquamarine;
+    width: 32%;
+}
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+.node circle {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
