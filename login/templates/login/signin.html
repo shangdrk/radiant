@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <form action="{% url 'login:sign_in' %}" method="post">
+    {% csrf_token %}
+        Username:<br>
+        <input type="text" name="username">
+        <br>
+        Password:<br>
+        <input type="password" name="password">
+        <br>
+        <input type="submit" value="Sign In">
+    </form>
+</body>
